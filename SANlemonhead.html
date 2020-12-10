@@ -1,0 +1,506 @@
+<!--
+SANDRA NGUYEN
+December 10, 2020
+self created theme: LemonHead 
+When life give you lemons... make nice theme backgrounds.
+Enjoy my show casing of my work!
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+      <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Google fonts-->
+		    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,100&display=swap" rel="stylesheet">
+		  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  transition: background-color .5s;
+  background-image: url('https://i.ibb.co/cv8zBgc/Processed-with-VSCOcam-with-c3-preset.jpg');
+    background-repeat: no-repeat;
+}
+
+.sidenav {
+  height: 100%;
+  width: 40px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #F6F3F3;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-family: 'Spartan';
+  margin-left:26px;
+  font-size: 12px;
+  color: #836363;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  font-size: 32px;
+  margin-left: 50px;
+}
+
+.sidenav .openbtn {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+#main {
+  width:100%;
+  transition: margin-left .5s;
+  position: relative;
+  padding: 0px;
+
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #F6F3F3;
+  padding: 10px;
+  text-align: center;
+  font-size: 10px;
+}
+
+
+/* Top Name only */ 
+p.x {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  margin-top:50px;
+  padding-left: 80px;
+  font-size:20px;
+/*   text-shadow: 1px 1px 4px #ffffff;  */
+  letter-spacing: 10px;
+}
+
+/* TITLE NAME */ 
+p.a {
+  font-family: 'Montserrat', sans-serif;
+  color: #674c4c;
+  font-size:20px;
+  letter-spacing: 5px;
+  padding: 1em;
+}
+
+/* BIG HEADER */
+p.b {
+  font-family: 'Montserrat', sans-serif;
+  font-size:11px;
+  font-color:#000000;
+  padding: 1em;
+}
+
+/* SMALL TEXT */
+p.c {
+  font-style: normal;
+  font-family: 'Source Sans Pro';
+  font-size:13px;
+  padding: 4em;
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+
+/* SMALL TEXT */
+p.d {
+  font-style: normal;
+  font-family: 'Montserrat';
+  font-size:12px;
+  padding: 4em;
+  letter-spacing: 1px;
+  line-height: 23px;
+}
+
+
+
+
+/*
+GRID CONTAINER
+GRID CONTAINER
+GRID CONTAINER
+GRID CONTAINER
+GRID CONTAINER */
+* {box-sizing: border-box;}
+
+.wrapper {
+  margin-left:-50px;
+  margin-top:900px;
+  border-radius: 5px;
+  background-color: #d3c5c5;
+}
+
+.box {
+  background-color: #f4f0f0;
+  height: 250px;
+  color: #836363;
+}
+.nested {
+  border: 2px solid #ffec99;
+  grid-template-columns: 200px 200px 200px;
+  /*grid-template-columns: 1fr 1fr; */
+  background-color: #fff9db;
+  padding: 1em;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 200px auto auto 200px;
+  grid-auto-rows: minmax(100px, auto);
+      background-image: url('https://i.ibb.co/cv8zBgc/Processed-with-VSCOcam-with-c3-preset.jpg');
+}
+
+.box0 {
+  height: 100px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.box1 {
+  height: 100%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: #ded3d3;
+}
+
+.box2 {
+  height: 100%;
+  border-left: 3px solid white; 
+  position:relative; 
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.box3 {
+  height: 100px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.box4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height:350px;
+}
+
+.box5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height:350px;
+  overflow-y: hidden;
+}
+
+.box6{
+  height:350px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: #ded3d3;
+}
+
+.box7{
+  height:350px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.box8 {
+  height:100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
+
+.box9 {
+  height:100%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: #ded3d3;
+}
+
+.box10 {
+  height:10%;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+
+.box11 {
+  height:100%;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+
+.box12 {
+  height:100%;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.box14 {
+  overflow: hidden;
+  grid-column-start: 2;
+  grid-column-end:3;
+}
+
+
+.box19 {
+  overflow: hidden;
+  grid-column-start: 3;
+  grid-column-end:4;
+}
+
+.box21, .box24 {
+  height:100%;
+}
+.box22 {
+  height:100%;
+  grid-column-start: 2;
+  grid-column-end:3;
+
+}
+
+.box23 {
+  height:100%;
+  grid-column-start: 3;
+  grid-column-end:4;
+
+}
+
+.box25 {
+  height: 50px;
+  grid-column-start: 1;
+  grid-column-end:5;
+
+}
+
+
+
+
+.boxFOOTER {
+  color:#ffffff;
+  margin-top:80px;
+  height:950px;
+  background-color:transparent;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+
+/*
+GRID CONTAINER
+GRID CONTAINER
+GRID CONTAINER
+GRID CONTAINER
+GRID CONTAINER */
+
+
+
+</style>
+</head>
+<body>
+<div id="top"></div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="openbtn" onclick="openNav()">&#9776;</a>
+  <a href="#top">Home</a>    
+  <a href="#section-one">About</a>
+  <a href="#section-two">Projects</a>
+  <a href="#section-three">Coding</a>
+  <a href="#section-four">Contact</a>
+</div>
+
+<div id="main">
+  <p class="x">SANDRA NGUYEN</p>
+  <div style="background-image: url('https://ibb.co/X45mQ2Z');">
+</div>
+
+
+
+<div class="wrapper">
+  <div class="box box0" id="section-one">
+    <center><p class="a">INTRODUCTION</p>
+    </center>
+
+  </div>
+  <div class="box box1">
+    <center>
+    <img src=https://i.ibb.co/44Pr8px/icon-Transp.png width=200px></center>
+
+
+
+  </div>
+  <div class="box box2">
+    <p class="a">ABOUT ME</p>
+    <p class="d">Background: Electrical & Computer Engineer at University of Washington, Seattle. Embedded concentration<BR><BR>
+    Currently working as a Program Manager at Boeing. My current projects include Satellite Communications (SATCOM) and Data Acquisition Unit (DFDAU). My work ranges from collaborating with cross-functional groups to technical testing in the lab.
+    <BR>
+    Welcome to my portfolio where I will be showcasing some of my work. My work ranges from coding projects, physical builds, to visual arts.</p>
+
+  </div>
+  <div class="box box3" id="section-two">
+    <center><p class="a">PROJECTS</p></center>
+
+  </div>
+
+  <div class="box box4">FOUR
+  </div>
+
+
+  <div class="box box5">
+    <img src=https://i.imgur.com/6gnsFVJ.jpg width=100%;>
+
+  </div>
+  <div class="box box6">
+    <p class="c">PC BUILD<BR>The build was a long and streneous process. Factors I considered were speed, cost, and design. Extra details here. Lots of words, the brown fox jumped over the moon. Details about the build. <BR> Additoinal information here. Talk about latency and cas latency.
+  </div>
+  <div class="box box7">seven<BR>
+    <p>some text here lahblahblahblabhl a</p>
+  </div>
+  <div class="box box8"></div>
+
+  <div class="box box9">
+    <p class="c">CHALLENGES<BR>Some interesting factors included latency. How to calculate? This depends on CAS. seconds, clock speed, RAM.</p>
+  </div>
+
+  <div class="box box10">
+    <img src="https://i.ibb.co/Y0wdS0w/cpu2.jpg" width=100%>
+
+
+  </div>
+
+  <div class="box box11"></div>
+
+  <div class="box box12" id="section-three">
+    <center><p class="a">CODING</p></center>
+  </div>
+
+  <div class="box box13"></div>
+  <div class="box box14">
+    <img src=https://i.ibb.co/n1tF7Qc/AOC.png width=100%>
+
+  </div>
+  <div class="box box15">
+    <p class="d">Advent of Code<BR>Advent calendar of small programming puzzles. Solved multiple puzzles in Java. The purpose is to gain experience, interview prep, train, challenge myself, and of course to have fun.</p>
+
+  </div>
+  <div class="box box16"></div>
+
+  <div class="box box17"></div>
+  <div class="box box18">
+    <p class="d">Leet Code<BR>Leet Code has been a great way for me to brush on data structures and algorithm problems. THere are a variety of problems ranked by level. I do these to brush up on syntax, exercise my brain, and challenge myself.
+  </div>
+  <div class="box box19">
+      <img src=https://i.ibb.co/55ZzgRF/leetcoe.png width=100%>
+  </div>
+  <div class="box box20"></div>
+  <div class="box box21"></div>
+  <div class="box box22">
+    <img src=https://i.ibb.co/5vpt0Qg/ste.png width=100%>
+  </div>
+  <div class="box box23">
+    <p class="c">HTML WEBPAGE HOSTED ON GITHUB<BR>This was a two part project with learning to host the webpage on github, and also coding the theme layout entirely from scratch using self taught HTML skills.<BR>Features include:  Single page "scrolling". Uses popular jQuery plugins to add a smooth scroll. Includes tagging id to respective sections, using cross-browser solution to support the scroll behavior. I used a JavaScript library, jQuery animate() method to add smooth page scroll. | Additional features include an open and close left sidebar navigaton. | Usage of grid container to structure content.
+  </div>
+  <div class="box box24"></div>
+  <div class="box box25"></div>
+  <!--
+  <div class="box box26"></div>
+  <div class="box box27"></div>
+  <div class="box box28"></div>
+  -->
+  <div class="box boxFOOTER" id="section-four">
+    <center><p class="a">CONTACT</p>
+ 
+      <img src=https://i.ibb.co/bmcNW0f/130731096-199685275182565-1905644455924192953-n.png width=150px>
+      <img src=https://i.ibb.co/fdkFHHH/130691581-727639744789627-3650503394434769335-n.png width=150px>
+      <img src=https://i.ibb.co/kggyTX2/130583672-181659050269492-3677764436866026359-n.png width=150px>
+
+    </center>
+  </div>
+</div>
+
+
+
+
+
+<script>
+document.getElementById('main').addEventListener('click', closeNav);
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "40px";
+  document.getElementById("main").style.marginLeft= "0px";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+   
+</body>
+</html> 
