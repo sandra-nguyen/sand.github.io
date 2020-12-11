@@ -153,13 +153,11 @@ p.c {
 p.d {
   font-style: normal;
   font-family: 'Montserrat';
-  font-size:12px;
+  font-size:12.5px;
   padding: 4em;
   letter-spacing: .2px;
-  line-height: 18px;
+  line-height: 20px;
 }
-
-
 
 
 /*
@@ -181,7 +179,7 @@ GRID CONTAINER */
   background-color: #f4f0f0;
   height: 250px;
   color: #836363;
-  min-width: 450px;
+  min-width: 520px;
 }
 .nested {
   border: 2px solid #ffec99;
@@ -213,9 +211,7 @@ GRID CONTAINER */
 
 .box2 {
   height: 100%;
-  border-left: 3px solid white; 
   position:relative; 
-
   grid-column-start: 3;
   grid-column-end: 4;
 }
@@ -309,10 +305,26 @@ height: 100%;
 
 }
 
+.box15 {
+  height:100%;
+  grid-column-start: 3;
+  grid-column-end:4;
+  background-color:#ded3d3;
+}
+
+.box18 {
+  height:100%;
+  grid-column-start: 2;
+  grid-column-end:3;
+  background-color:#ded3d3;
+}
+
+
 .box23 {
   height:100%;
   grid-column-start: 3;
   grid-column-end:4;
+  background-color:#ded3d3;
 
 }
 
@@ -397,26 +409,23 @@ GRID CONTAINER */
 
 
   <div class="box box5">
-    <img src=https://i.ibb.co/Y0wdS0w/cpu2.jpg width=100%;>
+    <img src=https://i.ibb.co/phG31RS/130114757-392430941874893-876203741645262467-n.jpg width=100%;>
 
   </div>
   <div class="box box6">
-    <p class="d"><b>PC BUILD</b><BR>I was asked once during an informational interview about what a computer would need to run X application. I remember struggling with the question and wanted to address this knowledge gap by learning more about pc parts. Although not necessary, I thought doing a hands-on build would be useful so I could retain not only parts needed but understand how and why pieces are chosen. Factors I considered were speed, cost, and design. With the basic, compoonents needed:<BR>
-        case (Lian Li Dynamic), motherboard (Asus Z170-A), CPU (Intel 1151), GPU (EVGA GTX 980 Ti), RAM (8gb DDR 3600), storage device (SSD used), Cooling, PSU (750W)<BR>
+    <p class="d"><b>PC BUILD</b><BR>I was asked once during an informational interview about what a computer would need to run X application. I remember struggling with the question and wanted to address this knowledge gap by learning more about pc parts. As EE, I've taken courses on Computer Design where we built a microprocessor, but doing research on a PC build greatly increased my knowledge base. For example, it was neat to see CPUs that do both single and multithread, similar to the course where we implemented pipelining to increase the number of instructions the cpu could process. However these days, CPUs come with a multitude of cores.<BR> Although not necessary, I thought doing a hands-on build would be useful so I could best learn not only what parts are needed but understand why certain components are chosen and how they work together. Factors I considered were speed, cost, and design.<BR>Components needed for a PC & what was used:<BR>
+        Case (Lian Li Dynamic), motherboard (Asus Z170-A), CPU (Intel 1151), GPU (EVGA GTX 980 Ti), RAM (8gb DDR 3600), storage device (SSD used), cooling, PSU (750W)<BR>
   </div>
-  <div class="box box7">seven<BR>
-    <p>some text here lahblahblahblabhl a</p>
-  </div>
+  <div class="box box7"></div>
   <div class="box box8"></div>
 
   <div class="box box9">
-    <p class="d"><b>DESIGN</b><BR>With speed, it's important to ensure your parts are supported by each other. I used an Intel i7 Quad-Core 4.0Ghz processor. With a deonated 4.0Ghz clock speed, I bought 8gb RAM at 3600 speed and knew my processor could support the rated speeds. Another factor was between latency and speed. Latency (ns) = clock cycle time (ns) x number of clock cycles, so ideally I would pick the highest memory speed supported by my cpu and mobo, and the lowest latency. It was also neat to see how CPUs do both single and multithread, which reminded me of Computer Design class where we implemented pipelining to increase the number of instructions the cpu could process. However these days, CPUs come with a multitude of cores. I also chose SSD as my storage device as it is quiet, reliable, has faster access time, and lower power consumption over HDD.<BR><b>WATER COOLING & CHALLENGES </b><BR>Though not necessary, I chose to do water cooling component-but on a buddget. I bought generic brand or lower cost fittings and water blocks for my cpu & gpu. So far, it's been half a year and has been running perfectly!<BR>I did encounter a physical build challenge. When installing the gpu water block, I didn't use enough thermal paste to make contact with the actual graphics processor. It caused my PC to hit bios screen but immediately crash after. I remedied the solution by applying extra thermal paste, but also installing heat sinks. Ultimately, heat sinks are just many, small aluminum alloy fins that allow heat to dissipate quicker.Al alloy has one of the higher thermal conuctivity values and is great for this purpose.<BR>Together with all these components and careful build, I was able to learn more about how PC parts play together, how to be mindful of speed for given components, and use parts within a budget. </p>
+    <p class="d"><b>DESIGN</b><BR>With speed, it's important to ensure your parts are supported by each other. I used an Intel i7 Quad-Core 4.0Ghz processor. With a deonated 4.0Ghz clock speed, I bought 8gb RAM at 3600 speed and knew my processor could support the rated speeds. Another factor was between latency and speed. Latency (ns) = clock cycle time (ns) x number of clock cycles, so ideally I would pick the highest memory speed supported by my cpu and mobo, and the lowest latency.  I also chose SSD as my storage device as it is quiet, reliable, has faster access time, and lower power consumption over HDD.<BR><b>WATER COOLING & CHALLENGES </b><BR>Though not necessary, I chose to do water cooling. To help budget, I bought generic brands for my fittings and cpu/gpu water blocks. They work great! The main challenge was with the water distribution panel on the right side. I had to ensure my pipes were connected in a way conducive to water flow. Starting with the bottom triangle, this takes water in from the pump then outputs to the GPU chamber. From this vertical chamber, it goes to the CPU, then back out to the top most chamber which runs through the radiator, then down to the main area of the distro block to be picked up by the pump again. Without proper connection, the pump will not push water through the plate at all.<BR>I also encountered a physical build and heat issue. I didn't use enough thermal paste to make contact between the GPU water block and the actual graphics processor. It caused my PC to reach bios screen but immediately crash after. I remedied the solution by applying extra thermal paste, but also installing heat sinks. Ultimately, heat sinks are just many, small aluminum alloy fins that allow heat to dissipate quicker. Al alloy has one of the higher thermal conuctivity values and is great for this purpose.</p>
   </div>
 
   <div class="box box10">
     <!--https://i.ibb.co/Y0wdS0w/cpu2.jpg -->
     <img src=https://i.imgur.com/6gnsFVJ.jpg width=100%><BR>
-    <img src="/assets/img/cpu3.png" width=100%>
 
 
   </div>
@@ -433,14 +442,14 @@ GRID CONTAINER */
 
   </div>
   <div class="box box15">
-    <p class="d">Advent of Code<BR>Advent calendar of small programming puzzles. Solved multiple puzzles in Java. The purpose is to gain experience, interview prep, train, challenge myself, and of course to have fun.</p>
+    <p class="d"><b>ADVENT OF COE</b><BR>Advent calendar of small programming puzzles. The purpose is to gain experience, interview prep, train, challenge myself, and of course to have fun. I had a mentor who suggested this event to me and it's been a great way to gain practice and test myself on coding knowledge. I've been solving problems using Java.</p>
 
   </div>
   <div class="box box16"></div>
 
   <div class="box box17"></div>
   <div class="box box18">
-    <p class="d">Leet Code<BR>Leet Code has been a great way for me to brush on data structures and algorithm problems. THere are a variety of problems ranked by level. I do these to brush up on syntax, exercise my brain, and challenge myself.
+    <p class="d"><b>LEET CODE</b><BR>Leet Code has been a great way for me to brush on data structures and algorithm problems. There are a variety of problems ranked by level. I do these to brush up on syntax, exercise my brain, and challenge myself. These problems also allow me to focus on specific topics so I can hone in and improve any weak points or just gain general practice.
   </div>
   <div class="box box19">
       <img src=https://i.ibb.co/55ZzgRF/leetcoe.png width=100%>
@@ -451,7 +460,7 @@ GRID CONTAINER */
     <img src=https://i.ibb.co/5vpt0Qg/ste.png width=100%>
   </div>
   <div class="box box23">
-    <p class="c">HTML WEBPAGE HOSTED ON GITHUB<BR>This was a two part project with learning to host the webpage on github, and also coding the theme layout entirely from scratch using self taught HTML skills.<BR>Features include:  Single page "scrolling". Uses popular jQuery plugins to add a smooth scroll. Includes tagging id to respective sections, using cross-browser solution to support the scroll behavior. I used a JavaScript library, jQuery animate() method to add smooth page scroll. | Additional features include an open and close left sidebar navigaton. | Usage of grid container to structure content.
+    <p class="c"><b>HTML WEBPAGE HOSTED ON GITHUB, w3schools.com</b><BR>I learned to host the webpage on github, and taught myself to code the webpage layout entirely from scratch. Features include:  single page scrolling. Uses popular jQuery plugins to add a smooth scroll. Includes tagging id to respective sections, using cross-browser solution to support the scroll behavior. I used a JavaScript library, jQuery animate() method to add smooth page scroll. I also include an open & close left sidebar navigaton and incorporated usage of grid containers to structure content, such as the box you see here. I used w3schools.com's html & css portion to learn how to code this entire webpage myself!
   </div>
   <div class="box box24"></div>
   <div class="box box25"></div>
