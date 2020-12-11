@@ -17,6 +17,9 @@ Enjoy my show casing of my work!
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,100&display=swap" rel="stylesheet">
 		  
 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
 body {
   transition: background-color .5s;
@@ -54,7 +57,7 @@ body {
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0px;
+  top: -5px;
   right: 30px;
   font-size: 32px;
   margin-left: 50px;
@@ -64,7 +67,7 @@ body {
   position: absolute;
   top: 0;
   right: 3px;
-  font-size: 20px;
+  font-size: 22px;
   margin-left: 50px;
 }
 
@@ -80,6 +83,20 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
 }
 
 
@@ -138,8 +155,8 @@ p.d {
   font-family: 'Montserrat';
   font-size:12px;
   padding: 4em;
-  letter-spacing: 1px;
-  line-height: 23px;
+  letter-spacing: .2px;
+  line-height: 18px;
 }
 
 
@@ -164,6 +181,7 @@ GRID CONTAINER */
   background-color: #f4f0f0;
   height: 250px;
   color: #836363;
+  min-width: 450px;
 }
 .nested {
   border: 2px solid #ffec99;
@@ -211,25 +229,25 @@ GRID CONTAINER */
 .box4 {
   grid-column-start: 1;
   grid-column-end: 2;
-  height:350px;
+height: 100%;
 }
 
 .box5 {
   grid-column-start: 2;
   grid-column-end: 3;
-  height:350px;
+  height:100%;
   overflow-y: hidden;
 }
 
 .box6{
-  height:350px;
+  height:100%;
   grid-column-start: 3;
   grid-column-end: 4;
   background-color: #ded3d3;
 }
 
 .box7{
-  height:350px;
+height: 100%;
   grid-column-start: 4;
   grid-column-end: 5;
 }
@@ -379,11 +397,12 @@ GRID CONTAINER */
 
 
   <div class="box box5">
-    <img src=https://i.imgur.com/6gnsFVJ.jpg width=100%;>
+    <img src=https://i.ibb.co/Y0wdS0w/cpu2.jpg width=100%;>
 
   </div>
   <div class="box box6">
-    <p class="d">PC BUILD<BR>The build was a long and streneous process. Factors I considered were speed, cost, and design. Extra details here. Lots of words, the brown fox jumped over the moon. Details about the build. <BR> Additoinal information here. Talk about latency and cas latency.
+    <p class="d"><b>PC BUILD</b><BR>I was asked once during an informational interview about what a computer would need to run X application. I remember struggling with the question and wanted to address this knowledge gap by learning more about pc parts. Although not necessary, I thought doing a hands-on build would be useful so I could retain not only parts needed but understand how and why pieces are chosen. Factors I considered were speed, cost, and design. With the basic, compoonents needed:<BR>
+        case (Lian Li Dynamic), motherboard (Asus Z170-A), CPU (Intel 1151), GPU (EVGA GTX 980 Ti), RAM (8gb DDR 3600), storage device (SSD used), Cooling, PSU (750W)<BR>
   </div>
   <div class="box box7">seven<BR>
     <p>some text here lahblahblahblabhl a</p>
@@ -391,11 +410,13 @@ GRID CONTAINER */
   <div class="box box8"></div>
 
   <div class="box box9">
-    <p class="c">CHALLENGES<BR>Some interesting factors included latency. How to calculate? This depends on CAS. seconds, clock speed, RAM.</p>
+    <p class="d"><b>DESIGN</b><BR>With speed, it's important to ensure your parts are supported by each other. I used an Intel i7 Quad-Core 4.0Ghz processor. With a deonated 4.0Ghz clock speed, I bought 8gb RAM at 3600 speed and knew my processor could support the rated speeds. Another factor was between latency and speed. Latency (ns) = clock cycle time (ns) x number of clock cycles, so ideally I would pick the highest memory speed supported by my cpu and mobo, and the lowest latency. It was also neat to see how CPUs do both single and multithread, which reminded me of Computer Design class where we implemented pipelining to increase the number of instructions the cpu could process. However these days, CPUs come with a multitude of cores. I also chose SSD as my storage device as it is quiet, reliable, has faster access time, and lower power consumption over HDD.<BR><b>WATER COOLING & CHALLENGES </b><BR>Though not necessary, I chose to do water cooling component-but on a buddget. I bought generic brand or lower cost fittings and water blocks for my cpu & gpu. So far, it's been half a year and has been running perfectly!<BR>I did encounter a physical build challenge. When installing the gpu water block, I didn't use enough thermal paste to make contact with the actual graphics processor. It caused my PC to hit bios screen but immediately crash after. I remedied the solution by applying extra thermal paste, but also installing heat sinks. Ultimately, heat sinks are just many, small aluminum alloy fins that allow heat to dissipate quicker.Al alloy has one of the higher thermal conuctivity values and is great for this purpose.<BR>Together with all these components and careful build, I was able to learn more about how PC parts play together, how to be mindful of speed for given components, and use parts within a budget. </p>
   </div>
 
   <div class="box box10">
-    <img src="https://i.ibb.co/Y0wdS0w/cpu2.jpg" width=100%>
+    <!--https://i.ibb.co/Y0wdS0w/cpu2.jpg -->
+    <img src=https://i.imgur.com/6gnsFVJ.jpg width=100%><BR>
+    <img src="/assets/img/cpu3.png" width=100%>
 
 
   </div>
